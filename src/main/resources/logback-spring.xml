@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <configuration>
-    <!-- 属性文件:在properties文件中找到对应的配置项 -->
-    <property name="log.path" value="./logs" />
+    <!-- 属性文件:在properties文件中找到对应的配置项 ,当前路径是指项目的根路径，因此./logs 将在项目根路径下建立logs目录-->
+    <property name="logging.path" value="./logs" />
 
     <appender name="consoleLog" class="ch.qos.logback.core.ConsoleAppender">
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
